@@ -1,13 +1,4 @@
 ﻿@model TravelBug.Model.Pages.StartPage
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>
+@Html.PropertyFor(m => m.NavContentArea, new { CustomTag = "div", ChildrenCustomTagName = "div" })
+@Html.PropertyFor(m => m.MainContentArea, new { CssClass = "main", CustomTag = "div", ChildrenCustomTagName = "div" })

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace TravelBug.Web
+namespace TravelBug
 {
     public class EPiServerApplication : EPiServer.Global
     {
