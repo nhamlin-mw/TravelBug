@@ -1,9 +1,5 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using EPiServer.Core;
-using EPiServer.DataAbstraction;
+﻿using EPiServer.Core;
 using EPiServer.DataAnnotations;
-using EPiServer.SpecializedProperties;
 
 namespace TravelBug.Model.Pages
 {
