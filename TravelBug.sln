@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelBug", "TravelBug\TravelBug.csproj", "{CBCF9766-243E-43B9-844C-79A365AD519F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelBug.Web", "TravelBug\TravelBug.Web.csproj", "{CBCF9766-243E-43B9-844C-79A365AD519F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelBug.Model", "TravelBug.Model\TravelBug.Model.csproj", "{889E33AA-AA70-46DC-A985-C479A6E2C614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CBCF9766-243E-43B9-844C-79A365AD519F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBCF9766-243E-43B9-844C-79A365AD519F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBCF9766-243E-43B9-844C-79A365AD519F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{889E33AA-AA70-46DC-A985-C479A6E2C614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889E33AA-AA70-46DC-A985-C479A6E2C614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889E33AA-AA70-46DC-A985-C479A6E2C614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889E33AA-AA70-46DC-A985-C479A6E2C614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
