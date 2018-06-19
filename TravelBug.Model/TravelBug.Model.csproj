@@ -185,6 +185,7 @@
     <Compile Include="Blocks\HeroBlock.cs" />
     <Compile Include="Blocks\TopNavBlock.cs" />
     <Compile Include="Blocks\ViewModels\TopNavViewModel.cs" />
+    <Compile Include="Interfaces\INavigationMenu.cs" />
     <Compile Include="MediaTypes\Image.cs" />
     <Compile Include="Pages\BaseContainer.cs" />
     <Compile Include="Pages\ContainerPage.cs" />
