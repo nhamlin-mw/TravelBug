@@ -214,6 +214,7 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Compile Include="Controllers\StandardPageController.cs" />
+    <Compile Include="Application\Configuration\TravelViewEngine.cs" />
     <Compile Include="Controllers\BasePageController.cs" />
     <Compile Include="Controllers\TopNavBlockController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
