@@ -5,18 +5,19 @@
     <meta name="generator" content="EPiServer CMS Falcon" />
     <meta name="description" content="" />
     <meta name="keywords" content=""/>
-    <title>EPiServer MVC Razor Example</title>
-    <link rel="stylesheet" href="@Href(Url.Content("~/Content/css/Site.css"))" media="all"/>
+    <title>Travel Bug</title>
+    <link rel="stylesheet" href="@Href(Url.Content("~/Assets/css/Site.css"))" media="all"/>
 </head>
 <body>
-	<header>
-		<h1>EPiServer MVC Razor Example</h1>
-        <section>
-        </section>
-        <nav id="topnavigation">
-            @RenderSection("TopNav", required:false)
-        </nav>
-	</header>
+<header>
+	
+	@RenderSection("HeroBlock")
+	<section>
+	</section>
+	<nav id="topnavigation">
+		@RenderSection("TopNav", required: false)
+	</nav>
+</header>
     <section id="main">
         <nav id="subnavigation">
         </nav>
@@ -25,7 +26,7 @@
         </section>
     </section>
     <footer class="mainfooter">
-        <p>&copy; Copyright @DateTime.Now.Year - EPiServer, Inc.</p>
+        <p>&copy; Copyright @DateTime.Now.Year - Making Waves</p>
 	</footer>
 </body>
 </html>

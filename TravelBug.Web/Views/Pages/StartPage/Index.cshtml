@@ -1,4 +1,14 @@
 ﻿@model TravelBug.Model.Pages.StartPage
 
-@Html.PropertyFor(m => m.NavContentArea, new { CustomTag = "div", ChildrenCustomTagName = "div" })
+@section TopNav
+{
+	@Html.PropertyFor(m => m.NavContentArea)
+}
+
+@section HeroBlock
+{
+	@Html.PropertyFor(m => m.HeroBlock)
+}
+
+@Html.PropertyFor(m => m.MainBody)
 @Html.PropertyFor(m => m.MainContentArea, new { CssClass = "main", CustomTag = "div", ChildrenCustomTagName = "div" })

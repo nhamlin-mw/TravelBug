@@ -227,7 +227,9 @@
     <Folder Include="Static\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Site.css" />
+    <Content Include="Assets\css\Site.css" />
+    <Content Include="Assets\images\icons\folder-icon.svg" />
+    <Content Include="Assets\images\icons\start_page.png" />
     <Content Include="License.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -254,7 +256,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\StartPage\Index.cshtml" />
+    <Content Include="Views\Pages\StartPage\Index.cshtml" />
     <Content Include="Views\Blocks\HeroBlock.cshtml" />
     <Content Include="Views\Blocks\TopNavBlock.cshtml" />
     <Content Include="Views\Shared\Image.cshtml" />
