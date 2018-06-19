@@ -1,0 +1,6 @@
+﻿@model TravelBug.Model.MediaTypes.Image
+
+@if (Model != null) 
+{
+	<img width="320" height="200" src="@Url.ContentUrl(Model.ContentLink)" alt="@Model.AltText">
+}
