@@ -1,0 +1,28 @@
+﻿@model TravelBug.Model.Blocks.HeroBlock
+
+<style>
+	.Hero {
+		background-image: url('@Url.ContentUrl(Model.BackgroundImage)');
+		height: 360px;
+		background-size: 100%;
+		background-position: 50% 50%;
+	}
+
+	.Hero--header {
+		font-family: Ravie, "Eras Bold ITC", Arial, sans-serif;
+		text-shadow: #FFF 0px 0px 1px, #FFF 0px 0px 1px, #FFF 0px 0px 1px;
+		font-size: 48pt;
+		color: midnightblue;
+	}
+
+	.Hero--subheader {
+		font-family: Ravie, "Eras Bold ITC", Arial, sans-serif;
+		text-shadow: #FFF 0px 0px 1px, #FFF 0px 0px 1px, #FFF 0px 0px 1px;
+		font-size: 28pt;
+		color: midnightblue;
+	}
+</style>
+<div class="Hero">
+	<div class="Hero--header">@Html.PropertyFor(m => m.Header)</div>
+	<div class="Hero--subheader">@Html.PropertyFor(m => m.Subheader)</div>
+</div>

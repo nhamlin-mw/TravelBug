@@ -214,6 +214,8 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Compile Include="Controllers\StandardPageController.cs" />
+    <Compile Include="Controllers\BasePageController.cs" />
+    <Compile Include="Controllers\TopNavBlockController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -255,6 +257,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\StartPage\Index.cshtml" />
+    <Content Include="Views\Blocks\HeroBlock.cshtml" />
+    <Content Include="Views\Blocks\TopNavBlock.cshtml" />
     <Content Include="Views\Shared\Image.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

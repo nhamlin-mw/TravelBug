@@ -1,0 +1,14 @@
+﻿@using EPiServer.Core
+@model TravelBug.Model.Blocks.ViewModels.TopNavViewModel
+
+<div>
+	@if (Model.PageChildren.Any())
+	{
+		<ul>
+			@foreach (var page in Model.PageChildren.OfType<PageData>())
+			{
+				<li><a href="@page.ExternalURL">@page.Name</a></li>
+			}
+		</ul>
+	}
+</div>

@@ -182,6 +182,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\UIDescriptors.cs" />
+    <Compile Include="Blocks\HeroBlock.cs" />
+    <Compile Include="Blocks\TopNavBlock.cs" />
+    <Compile Include="Blocks\ViewModels\TopNavViewModel.cs" />
     <Compile Include="MediaTypes\Image.cs" />
     <Compile Include="Pages\BaseContainer.cs" />
     <Compile Include="Pages\ContainerPage.cs" />
@@ -196,9 +199,6 @@
     <None Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
     <None Include="modules\_protected\Shell\Shell.zip" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Blocks\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TravelBug.Core\TravelBug.Core.csproj">
