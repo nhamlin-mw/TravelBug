@@ -189,16 +189,13 @@
     <Compile Include="MediaTypes\Image.cs" />
     <Compile Include="Pages\BaseContainer.cs" />
     <Compile Include="Pages\ContainerPage.cs" />
-    <Compile Include="Pages\StandardPage.cs" />
+    <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\StartPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="App_Data\GeoLiteCity.dat" />
-    <None Include="modules\_protected\CMS\CMS.zip" />
-    <None Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
-    <None Include="modules\_protected\Shell\Shell.zip" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

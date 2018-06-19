@@ -213,7 +213,6 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
-    <Compile Include="Controllers\StandardPageController.cs" />
     <Compile Include="Application\Configuration\TravelViewEngine.cs" />
     <Compile Include="Controllers\BasePageController.cs" />
     <Compile Include="Controllers\TopNavBlockController.cs" />
@@ -224,7 +223,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Business\" />
     <Folder Include="modulesbin\" />
     <Folder Include="Static\" />
   </ItemGroup>
@@ -254,7 +252,6 @@
     <Content Include="modules\_protected\CMS\CMS.zip" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\StandardPage\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\StartPage\Index.cshtml" />
