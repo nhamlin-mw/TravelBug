@@ -6,7 +6,7 @@ using EPiServer.Web;
 namespace TravelBug.Model.Blocks
 {
 	[ContentType(DisplayName = "Hero Block", GUID = "31d0d43e-b7a5-4216-a88c-7dd2a6a22ff0", Description = "")]
-	public class HeroBlock : BlockData
+	public class HeroBlock : BaseBlock
 	{
 		[Display(Name = "Background Image", Order = 10)]
 		[UIHint(UIHint.Image)]

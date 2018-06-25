@@ -7,7 +7,7 @@ using EPiServer.DataAnnotations;
 namespace TravelBug.Model.Blocks
 {
 	[ContentType(DisplayName = "TopNavBlock", GUID = "5eec3a03-19f0-46bb-9d1e-15874ffabfae", Description = "")]
-	public class TopNavBlock : BlockData
+	public class TopNavBlock : BaseBlock
 	{
 
 		[CultureSpecific]

@@ -182,6 +182,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\UIDescriptors.cs" />
+    <Compile Include="Blocks\BaseBlock.cs" />
     <Compile Include="Blocks\HeroBlock.cs" />
     <Compile Include="Blocks\TopNavBlock.cs" />
     <Compile Include="Blocks\ViewModels\TopNavViewModel.cs" />
