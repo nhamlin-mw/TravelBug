@@ -14,17 +14,21 @@ namespace TravelBug.Controllers
 {
 	public class TopNavBlockController : BlockController<TopNavBlock>
 	{
+		private readonly IContentLoader _contentLoader;
+
+		public TopNavBlockController(IContentLoader contentLoader)
+		{
+			_contentLoader = contentLoader;
+		}
+
 		public override ActionResult Index(TopNavBlock currentBlock)
 		{
 			var pageChildren = Enumerable.Empty<INavigationMenu>();
 
-			// Get the content repository
-			IContentRepository contentRepository = ServiceLocator.Current.GetInstance<IContentRepository>();
-
 			// Get the children of the page specified in the ParentPage property of the block
 			if (!PageReference.IsNullOrEmpty(currentBlock.ParentPage))
 			{
-				pageChildren = contentRepository.GetChildren<INavigationMenu>(currentBlock.ParentPage).Where(m=>m.IsVisible);
+				pageChildren = _contentLoader.GetChildren<INavigationMenu>(currentBlock.ParentPage).Where(m=>m.IsVisible);
 			}
 
 			return PartialView("TopNavBlock", new TopNavViewModel(currentBlock, pageChildren));
