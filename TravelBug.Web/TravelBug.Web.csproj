@@ -131,6 +131,7 @@
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\StructureMap.4.5.2\lib\net45\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -214,6 +215,8 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Compile Include="Application\Configuration\TravelViewEngine.cs" />
+    <Compile Include="Application\Initialization\WebBootstrapper.cs" />
+    <Compile Include="Application\Initialization\WebInitializer.cs" />
     <Compile Include="Controllers\BasePageController.cs" />
     <Compile Include="Controllers\TopNavBlockController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
@@ -244,14 +247,7 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Data\GeoLiteCity.dat" />
     <None Include="EPiServerLog.config" />
-    <Content Include="modules\_protected\EPiServer.Cms.TinyMce\web.config" />
-    <Content Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
-    <Content Include="modules\_protected\Shell\web.config" />
-    <Content Include="modules\_protected\Shell\Shell.zip" />
-    <Content Include="modules\_protected\CMS\web.config" />
-    <Content Include="modules\_protected\CMS\CMS.zip" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -268,6 +264,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TravelBug.Core\TravelBug.Core.csproj">
+      <Project>{8F77AF8E-2E0D-4775-9574-A55B8E2B25C3}</Project>
+      <Name>TravelBug.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TravelBug.Model\TravelBug.Model.csproj">
       <Project>{889E33AA-AA70-46DC-A985-C479A6E2C614}</Project>
       <Name>TravelBug.Model</Name>
