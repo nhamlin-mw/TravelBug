@@ -1,14 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
 using EPiServer;
 using EPiServer.Core;
-using EPiServer.ServiceLocation;
 using EPiServer.Web.Mvc;
+using TravelBug.Core.Model.Interfaces;
 using TravelBug.Model.Blocks;
 using TravelBug.Model.Blocks.ViewModels;
-using TravelBug.Model.Interfaces;
-using TravelBug.Model.Pages;
 
 namespace TravelBug.Controllers
 {

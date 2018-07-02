@@ -1,15 +1,14 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
+using TravelBug.Core.Model.Blocks;
 
 namespace TravelBug.Model.Blocks
 {
 	[ContentType(DisplayName = "TopNavBlock", GUID = "5eec3a03-19f0-46bb-9d1e-15874ffabfae", Description = "")]
 	public class TopNavBlock : BaseBlock
 	{
-
 		[CultureSpecific]
 		[Display(
 			Name = "Parent Page",
@@ -17,6 +16,5 @@ namespace TravelBug.Model.Blocks
 			GroupName = SystemTabNames.Content,
 			Order = 1)]
 		public virtual PageReference ParentPage { get; set; }
-
 	}
 }

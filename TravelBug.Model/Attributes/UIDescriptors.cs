@@ -1,6 +1,6 @@
 ﻿using EPiServer.Shell;
 using TravelBug.Core;
-using TravelBug.Model.Pages;
+using TravelBug.Core.Model.Pages;
 
 namespace TravelBug.Model.Attributes
 {

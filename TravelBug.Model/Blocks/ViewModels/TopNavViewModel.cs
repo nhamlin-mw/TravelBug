@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using EPiServer.Core;
-using TravelBug.Model.Interfaces;
-using TravelBug.Model.Pages;
+using TravelBug.Core.Model.Interfaces;
 
 namespace TravelBug.Model.Blocks.ViewModels
 {

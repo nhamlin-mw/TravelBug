@@ -1,6 +1,5 @@
 ﻿using System.Web.Mvc;
-using EPiServer.Web.Mvc;
-using TravelBug.Model.Pages;
+using TravelBug.Core.Model.Pages;
 
 namespace TravelBug.Controllers
 {

@@ -2,6 +2,7 @@
 using EPiServer.Core;
 using EPiServer.DataAnnotations;
 using EPiServer.Web;
+using TravelBug.Core.Model.Blocks;
 
 namespace TravelBug.Model.Blocks
 {

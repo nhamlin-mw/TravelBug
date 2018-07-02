@@ -4,9 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using EPiServer;
 using EPiServer.Core;
-using EPiServer.Logging;
 using EPiServer.ServiceLocation;
-using TravelBug.Core.Utility;
 using TravelBug.Core.Utility.Extensions;
 
 namespace TravelBug.Core.Utility.Nansen.Encore.Content
