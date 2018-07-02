@@ -182,16 +182,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\UIDescriptors.cs" />
-    <Compile Include="Blocks\BaseBlock.cs" />
     <Compile Include="Blocks\HeroBlock.cs" />
+    <Compile Include="Blocks\PreviewBlock.cs" />
     <Compile Include="Blocks\TopNavBlock.cs" />
+    <Compile Include="Blocks\ViewModels\BlockEditViewModel.cs" />
     <Compile Include="Blocks\ViewModels\TopNavViewModel.cs" />
-    <Compile Include="Interfaces\INavigationMenu.cs" />
-    <Compile Include="MediaTypes\Image.cs" />
-    <Compile Include="Pages\BaseContainer.cs" />
-    <Compile Include="Pages\ContainerPage.cs" />
-    <Compile Include="Pages\BasePage.cs" />
-    <Compile Include="Pages\StartPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +199,9 @@
       <Project>{8F77AF8E-2E0D-4775-9574-A55B8E2B25C3}</Project>
       <Name>TravelBug.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

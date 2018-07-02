@@ -3,7 +3,7 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
-namespace TravelBug.Model.Pages
+namespace TravelBug.Core.Model.Pages
 {
 	[ContentType(DisplayName = "BasePage", GUID = "a3c1b128-180d-4543-8812-e9dfed532983", Description = "")]
 	public class BasePage : PageData

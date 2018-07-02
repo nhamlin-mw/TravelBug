@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using EPiServer.DataAnnotations;
-using TravelBug.Model.Interfaces;
+using TravelBug.Core.Model.Interfaces;
 
-namespace TravelBug.Model.Pages
+namespace TravelBug.Core.Model.Pages
 {
 	[ContentType(DisplayName = "Container Page", GUID = "7fc18fae-33c1-4f64-94c6-c5a279e6bf7e", Description = "")]
 	[ImageUrl("~/Assets/images/icons/folder-icon.svg")]

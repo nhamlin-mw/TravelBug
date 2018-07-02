@@ -34,16 +34,32 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EPiServer.CMS.Core.11.5.4\lib\net461\EPiServer.dll</HintPath>
     </Reference>
+    <Reference Include="EPiServer.Cms.AspNet, Version=11.5.4.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPiServer.CMS.AspNet.11.5.4\lib\net461\EPiServer.Cms.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Configuration, Version=11.5.4.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPiServer.CMS.AspNet.11.5.4\lib\net461\EPiServer.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="EPiServer.Data, Version=11.5.4.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7" />
     <Reference Include="EPiServer.Framework, Version=11.5.4.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EPiServer.Framework.11.5.4\lib\net461\EPiServer.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Framework.AspNet, Version=11.5.4.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPiServer.Framework.AspNet.11.5.4\lib\net461\EPiServer.Framework.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.ImageLibrary, Version=11.5.4.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPiServer.CMS.AspNet.11.5.4\lib\net461\EPiServer.ImageLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Web.WebControls, Version=11.5.4.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPiServer.CMS.AspNet.11.5.4\lib\net461\EPiServer.Web.WebControls.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\StructureMap.4.5.2\lib\net45\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -59,17 +75,27 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="EpiserverDefaultContentIcons.cs" />
+    <Compile Include="Interfaces\INavigationMenu.cs" />
+    <Compile Include="Model\Blocks\BaseBlock.cs" />
+    <Compile Include="Model\MediaTypes\Image.cs" />
+    <Compile Include="Model\Pages\BaseContainer.cs" />
+    <Compile Include="Model\Pages\BasePage.cs" />
+    <Compile Include="Model\Pages\ContainerPage.cs" />
+    <Compile Include="Model\Pages\StartPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rendering\CustomContentAreaRenderer.cs" />
     <Compile Include="Utility\Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Utility\Extensions\ImageExtensions.cs" />
     <Compile Include="Utility\Nansen\Encore\ContentUtility.cs" />
     <Compile Include="Utility\Nansen\Encore\Content\DefaultContentLoaderFacade.cs" />
     <Compile Include="Utility\Nansen\Encore\Content\IContentFilterFacade.cs" />
     <Compile Include="Utility\Nansen\Encore\Content\IContentLoaderFacade.cs" />
+    <Compile Include="Utility\SiteUtility.cs" />
     <Compile Include="Utility\StructureMapDependencyResolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
