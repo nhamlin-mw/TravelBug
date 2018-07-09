@@ -83,6 +83,7 @@ header {
 	#topnavigation ul {
 		list-style-type: none;
 		display: block;
+		margin-bottom: 0;
 	}
 
 		#topnavigation ul li {
@@ -185,18 +186,18 @@ header {
 }
 
 section.listing ul {
-		list-style-type: none;
+	list-style-type: none;
+}
+
+	section.listing ul li {
+		border-top: solid 1px #ccc;
+		margin-top: 1em;
+		padding-top: 1em;
 	}
 
-		section.listing ul li {
-			border-top: solid 1px #ccc;
-			margin-top: 1em;
-			padding-top: 1em;
+		section.listing ul li h3 {
+			font-size: 1.1em;
 		}
-
-			section.listing ul li h3 {
-				font-size: 1.1em;
-			}
 
 footer.mainfooter {
 	clear: both;
@@ -393,3 +394,17 @@ form.xform fieldset {
 		display: block;
 		padding: .2em 1em;
 	}
+
+/* User specific */
+.u-md-size1of2,
+.u-md-size2of4,
+.u-md-size3of6,
+.u-md-size4of8,
+.u-md-size5of10,
+.u-md-size6of12 {
+	width: 50% !important;
+}
+
+.font-bold {
+	font-weight: bold;
+}

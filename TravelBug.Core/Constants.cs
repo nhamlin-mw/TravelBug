@@ -1,38 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace TravelBug.Core
 {
-	public class Constants
+	public static class Constants
 	{
+		public const string BaseChildrenCssClass = "";  //Grid-cell
+		public const string BaseContainerCssClass = ""; //Grid
 
-		//public static string[] DefaultDisplayTags = {
-		//	BlockDisplayTags.Full,
-		//	BlockDisplayTags.TwoThirds,
-		//	BlockDisplayTags.Half,
-		//	BlockDisplayTags.OneThird,
-		//	BlockDisplayTags.OneQuarter
-		//};
+		public static readonly Dictionary<string, string> BlockDisplayClasses = new Dictionary<string, string>
+		{
+			{ BlockDisplayTags.Full, "col" },
+			{ BlockDisplayTags.ThreeQuarters, "col-9" },
+			{ BlockDisplayTags.TwoThirds, "col-8" },
+			{ BlockDisplayTags.Half, "col-6" },
+			{ BlockDisplayTags.OneThird, "col-4" },
+			{ BlockDisplayTags.OneQuarter, "col-3" }
+		};
 
 		public static class BlockDisplayTags
 		{
 			public const string Full = "full";
+			public const string ThreeQuarters = "threequarters";
 			public const string TwoThirds = "twothirds";
 			public const string Half = "half";
 			public const string OneThird = "onethird";
 			public const string OneQuarter = "onequarter";
 		}
-
-		//public static Dictionary<string, string> BlockDisplayClasses = new Dictionary<string, string>
-		//{
-		//	{ BlockDisplayTags.Full, "u-sizeFull" },
-		//	{ BlockDisplayTags.TwoThirds, "u-md-size2of3" },
-		//	{ BlockDisplayTags.Half, "u-md-size1of2" },
-		//	{ BlockDisplayTags.OneThird, "u-md-size1of3" },
-		//	{ BlockDisplayTags.OneQuarter, "u-sm-size1of2 u-md-size1of4" },
-		//};
 	}
 }

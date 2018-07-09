@@ -1,4 +1,6 @@
-﻿using StructureMap;
+﻿using EPiServer.Web.Mvc.Html;
+using StructureMap;
+using TravelBug.Core.Rendering;
 using TravelBug.Core.Utility.Nansen.Encore.Content;
 
 namespace TravelBug.Application.Initialization
@@ -10,6 +12,7 @@ namespace TravelBug.Application.Initialization
 			// layout/metadata modifiers
 			
 			For<IContentLoaderFacade>().Use<DefaultContentLoaderFacade>();
+			For<ContentAreaRenderer>().Use<CustomContentAreaRenderer>();
 		}
 	}
 }

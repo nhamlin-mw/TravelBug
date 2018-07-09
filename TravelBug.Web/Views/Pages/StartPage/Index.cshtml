@@ -1,13 +1,14 @@
-﻿@model TravelBug.Model.Pages.StartPage
-
-@section TopNav
-{
-	@Html.PropertyFor(m => m.NavContentArea)
-}
+﻿@using TravelBug.Core.Utility
+@model TravelBug.Core.Model.Pages.StartPage
 
 @section HeroBlock
 {
-	@Html.PropertyFor(m => m.HeroBlock)
+	@Html.PropertyFor(m => SiteUtility.StartPage.HeroContentArea)
+}
+
+@section TopNav
+{
+	@Html.PropertyFor(m => SiteUtility.StartPage.NavContentArea)
 }
 
 @Html.PropertyFor(m => m.MainBody)

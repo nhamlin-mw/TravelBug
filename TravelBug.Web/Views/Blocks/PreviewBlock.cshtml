@@ -1,0 +1,31 @@
+﻿@using TravelBug.Core
+@model TravelBug.Model.Blocks.ViewModels.BlockEditPageViewModel
+<div class="col font-bold">
+	@Constants.BlockDisplayTags.Full:
+	@Html.PropertyFor(m => m.previewBlock.ContentArea)
+</div>
+<br />
+<div class="col-9 font-bold">
+	@Constants.BlockDisplayTags.ThreeQuarters:
+	@Html.PropertyFor(m => m.previewBlock.ContentArea)
+</div>
+<br />
+<div class="col-8 font-bold">
+	@Constants.BlockDisplayTags.TwoThirds:
+	@Html.PropertyFor(m => m.previewBlock.ContentArea)
+</div>
+<br />
+<div class="col-6 font-bold">
+	@Constants.BlockDisplayTags.Half:
+	@Html.PropertyFor(m => m.previewBlock.ContentArea)
+</div>
+<br />
+<div class="col-4 font-bold">
+	@Constants.BlockDisplayTags.OneThird:
+	@Html.PropertyFor(m => m.previewBlock.ContentArea)
+</div>
+<br />
+<div class="col-3 font-bold">
+	@Constants.BlockDisplayTags.OneQuarter:
+	@Html.PropertyFor(m => m.previewBlock.ContentArea)
+</div>

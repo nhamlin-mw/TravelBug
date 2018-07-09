@@ -17,7 +17,7 @@ namespace TravelBug.Application.Initialization
 		public void Initialize(InitializationEngine context)
 		{
 			//Add initialization logic, this method is called once after CMS has been initialized
-			//AddDisplayOptions(context.Locate.Advanced.GetInstance<DisplayOptions>());
+			AddDisplayOptions(context.Locate.Advanced.GetInstance<DisplayOptions>());
 		}
 
 		public void Uninitialize(InitializationEngine context)
@@ -42,7 +42,7 @@ namespace TravelBug.Application.Initialization
 				                   id: BlockDisplayTags.Full,
 				                   tag: BlockDisplayTags.Full,
 				                   name: "(1/1) Full",
-				                   iconClass: "u-md-sizeFull",
+				                   iconClass: "col",
 				                   description: null
 				                  );
 			}
@@ -53,7 +53,7 @@ namespace TravelBug.Application.Initialization
 				                   id: BlockDisplayTags.TwoThirds,
 				                   tag: BlockDisplayTags.TwoThirds,
 				                   name: "(2/3) Two Thirds",
-				                   iconClass: "u-md-size2of3",
+				                   iconClass: "col-9",
 				                   description: null
 				                  );
 			}
@@ -64,7 +64,7 @@ namespace TravelBug.Application.Initialization
 				                   id: BlockDisplayTags.Half,
 				                   tag: BlockDisplayTags.Half,
 				                   name: "(1/2) Half",
-				                   iconClass: "u-md-size1of2",
+				                   iconClass: "col-6",
 				                   description: null
 				                  );
 			}
@@ -75,7 +75,7 @@ namespace TravelBug.Application.Initialization
 				                   id: BlockDisplayTags.OneThird,
 				                   tag: BlockDisplayTags.OneThird,
 				                   name: "(1/3) One Third",
-				                   iconClass: "u-md-size1of3",
+				                   iconClass: "col-4",
 				                   description: null
 				                  );
 			}
@@ -86,7 +86,7 @@ namespace TravelBug.Application.Initialization
 				                   id: BlockDisplayTags.OneQuarter,
 				                   tag: BlockDisplayTags.OneQuarter,
 				                   name: "(1/4) One Quarter",
-				                   iconClass: "u-md-size1of4",
+				                   iconClass: "col-3",
 				                   description: null
 				                  );
 			}
