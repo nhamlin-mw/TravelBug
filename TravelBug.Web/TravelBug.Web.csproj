@@ -248,6 +248,7 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
     <Compile Include="Application\Configuration\TravelViewEngine.cs" />
+    <Compile Include="Application\Initialization\UserManagementInitializer.cs" />
     <Compile Include="Application\Initialization\WebBootstrapper.cs" />
     <Compile Include="Application\Initialization\WebInitializer.cs" />
     <Compile Include="Application\Security\StartupAuthenticationConfiguration.cs" />
