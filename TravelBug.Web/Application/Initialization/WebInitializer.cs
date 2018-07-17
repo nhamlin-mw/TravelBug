@@ -22,7 +22,8 @@ namespace TravelBug.Application.Initialization
 
 		public void Uninitialize(InitializationEngine context)
 		{
-			//Add uninitialization logic
+			//Add uninitialization logic in reverse order of what's in the initialization method
+			RemoveDisplayOptions(context.Locate.Advanced.GetInstance<DisplayOptions>());
 		}
 
 		public void ConfigureContainer(ServiceConfigurationContext context)
@@ -89,6 +90,15 @@ namespace TravelBug.Application.Initialization
 				                   iconClass: "col-3",
 				                   description: null
 				                  );
+			}
+		}
+
+		private void RemoveDisplayOptions(DisplayOptions displayOptions)
+		{
+			var allOptions = displayOptions.ToList();
+			foreach (var option in allOptions)
+			{
+				displayOptions.Remove(option.Id);
 			}
 		}
 	}
